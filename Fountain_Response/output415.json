@@ -1,0 +1,354 @@
+{
+  "scenes": [
+    {
+      "scene_id": "scene_964a5818",
+      "heading": "INT. SMALL ROADSIDE STORE – LATE AFTERNOON",
+      "action": [
+        {
+          "text": "The store is quiet. A ceiling fan hums.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The SHOPKEEPER counts change behind the counter.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER stands nearby, examining a candy bar. He sets it down.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER nods. Processes this.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "A beat.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER looks around.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER meets his eyes.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER tilts his head slightly.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The SHOPKEEPER chuckles politely.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "Silence stretches.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER takes a coin from his pocket and places it on the counter.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The SHOPKEEPER glances at the coin.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "He nudges it forward.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The SHOPKEEPER frowns.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER’s voice stays calm.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "A long pause. The fan hum grows louder.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The SHOPKEEPER swallows.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER flips the coin. Catches it. Covers it.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "He reveals it.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The SHOPKEEPER exhales, nervous laugh.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER pushes the coin toward him.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER leans in just slightly.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The STRANGER turns and walks out.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The SHOPKEEPER stares at the coin in his hand.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "The bell over the door jingles.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "Silence.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "CUT TO BLACK.",
+          "is_beat": false,
+          "character_ref": null
+        }
+      ],
+      "dialogue": [
+        {
+          "dialogue_id": "dlg_eea75c1f",
+          "character": "STRANGER",
+          "text": "How long you been running this place?",
+          "parenthetical": null,
+          "order": 1
+        },
+        {
+          "dialogue_id": "dlg_c0fab857",
+          "character": "SHOPKEEPER",
+          "text": "Oh— close to thirty years now.",
+          "parenthetical": null,
+          "order": 2
+        },
+        {
+          "dialogue_id": "dlg_e0d68d69",
+          "character": "STRANGER",
+          "text": "That’s a long time.",
+          "parenthetical": null,
+          "order": 3
+        },
+        {
+          "dialogue_id": "dlg_488a4be8",
+          "character": "SHOPKEEPER",
+          "text": "Guess it is.",
+          "parenthetical": {
+            "raw": "smiles",
+            "emotions": [
+              "smiles"
+            ]
+          },
+          "order": 4
+        },
+        {
+          "dialogue_id": "dlg_88491d59",
+          "character": "STRANGER",
+          "text": "Place doesn’t change much, does it?",
+          "parenthetical": null,
+          "order": 5
+        },
+        {
+          "dialogue_id": "dlg_3c66a54f",
+          "character": "SHOPKEEPER",
+          "text": "People like it that way.",
+          "parenthetical": null,
+          "order": 6
+        },
+        {
+          "dialogue_id": "dlg_3781c089",
+          "character": "STRANGER",
+          "text": "You married?",
+          "parenthetical": null,
+          "order": 7
+        },
+        {
+          "dialogue_id": "dlg_66d6940c",
+          "character": "SHOPKEEPER",
+          "text": "Yes, sir.",
+          "parenthetical": null,
+          "order": 8
+        },
+        {
+          "dialogue_id": "dlg_f5ca6331",
+          "character": "STRANGER",
+          "text": "How long?",
+          "parenthetical": null,
+          "order": 9
+        },
+        {
+          "dialogue_id": "dlg_3df0ae85",
+          "character": "SHOPKEEPER",
+          "text": "Thirty-two years.",
+          "parenthetical": null,
+          "order": 10
+        },
+        {
+          "dialogue_id": "dlg_409951b6",
+          "character": "STRANGER",
+          "text": "Then you know something about commitment.",
+          "parenthetical": null,
+          "order": 11
+        },
+        {
+          "dialogue_id": "dlg_9c277092",
+          "character": "SHOPKEEPER",
+          "text": "I suppose.",
+          "parenthetical": null,
+          "order": 12
+        },
+        {
+          "dialogue_id": "dlg_cdcdb8fe",
+          "character": "STRANGER",
+          "text": "You ever notice how some things only look small until they decide something big?",
+          "parenthetical": null,
+          "order": 13
+        },
+        {
+          "dialogue_id": "dlg_b01d3771",
+          "character": "SHOPKEEPER",
+          "text": "I’m not sure what you mean.",
+          "parenthetical": null,
+          "order": 14
+        },
+        {
+          "dialogue_id": "dlg_290f0d55",
+          "character": "STRANGER",
+          "text": "That coin’s been traveling a long time. Long before either of us walked in here.",
+          "parenthetical": null,
+          "order": 15
+        },
+        {
+          "dialogue_id": "dlg_0d31d231",
+          "character": "STRANGER ",
+          "text": "Call it.",
+          "parenthetical": null,
+          "order": 16
+        },
+        {
+          "dialogue_id": "dlg_7d00101e",
+          "character": "SHOPKEEPER",
+          "text": "Call what?",
+          "parenthetical": null,
+          "order": 17
+        },
+        {
+          "dialogue_id": "dlg_fdbeb2f0",
+          "character": "STRANGER",
+          "text": "Heads or tails.",
+          "parenthetical": null,
+          "order": 18
+        },
+        {
+          "dialogue_id": "dlg_7e7d2eb1",
+          "character": "SHOPKEEPER",
+          "text": "For what?",
+          "parenthetical": {
+            "raw": "confused, uneasy",
+            "emotions": [
+              "confused",
+              "uneasy"
+            ]
+          },
+          "order": 19
+        },
+        {
+          "dialogue_id": "dlg_05f506fe",
+          "character": "STRANGER",
+          "text": "For everything up to this moment.",
+          "parenthetical": null,
+          "order": 20
+        },
+        {
+          "dialogue_id": "dlg_0d6864af",
+          "character": "SHOPKEEPER",
+          "text": "I didn’t agree to any game.",
+          "parenthetical": null,
+          "order": 21
+        },
+        {
+          "dialogue_id": "dlg_c7176b97",
+          "character": "STRANGER",
+          "text": "That’s the thing. You don’t have to agree for it to matter.",
+          "parenthetical": null,
+          "order": 22
+        },
+        {
+          "dialogue_id": "dlg_93cdae9e",
+          "character": "SHOPKEEPER",
+          "text": "Heads.",
+          "parenthetical": null,
+          "order": 23
+        },
+        {
+          "dialogue_id": "dlg_548b7393",
+          "character": "STRANGER",
+          "text": "You chose right.",
+          "parenthetical": null,
+          "order": 24
+        },
+        {
+          "dialogue_id": "dlg_ac1905a5",
+          "character": "SHOPKEEPER",
+          "text": "So… what happens now?",
+          "parenthetical": null,
+          "order": 25
+        },
+        {
+          "dialogue_id": "dlg_7d8df327",
+          "character": "STRANGER",
+          "text": "You keep it.",
+          "parenthetical": null,
+          "order": 26
+        },
+        {
+          "dialogue_id": "dlg_f56016c0",
+          "character": "SHOPKEEPER",
+          "text": "Why?",
+          "parenthetical": null,
+          "order": 27
+        },
+        {
+          "dialogue_id": "dlg_eb4ce1e1",
+          "character": "STRANGER",
+          "text": "Because you won. And people should remember when luck decided to stay.",
+          "parenthetical": null,
+          "order": 28
+        }
+      ]
+    }
+  ]
+}
