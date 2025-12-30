@@ -1,78 +1,87 @@
 import re
-from models.schema import Scene, Dialogue, Script
+from models.schema import Scene, Dialogue, Script, Action, Parenthetical, uid
 
 SCENE_RE = re.compile(r'^(INT|EXT)\.?\s', re.IGNORECASE)
-CHAR_RE = re.compile(r'^[A-Z][A-Z0-9 ()\.]{1,40}$')
-PAREN_RE = re.compile(r'^\(.+\)$')
+CHAR_RE = re.compile(r'^([A-Z][A-Z0-9 ]{1,40})(?:\s*\(CONT[’\']?D\))?$')
+PAREN_RE = re.compile(r'^\((.+)\)$')
+BEAT_RE = re.compile(r'^(A beat\.|Beat\.|Pause\.)$', re.IGNORECASE)
+
 
 def parse_fountain(text: str) -> Script:
     scenes = []
     current_scene = None
     current_character = None
     pending_parenthetical = None
+    last_dialogue = None
     order = 1
 
-    lines = text.splitlines()
+    for raw in text.splitlines():
+        line = raw.strip()
 
-    for raw in lines:
-        line = raw.rstrip()
-
-        # 🔹 Blank line → reset dialogue flow
-        if not line.strip():
+        # blank line → reset dialogue flow
+        if not line:
             current_character = None
             pending_parenthetical = None
+            last_dialogue = None
             continue
 
-        # 🎬 Scene Heading
+        # 🎬 Scene heading
         if SCENE_RE.match(line):
-            current_scene = Scene(heading=line.strip())
+            current_scene = Scene(
+                scene_id=uid("scene"),
+                heading=line
+            )
             scenes.append(current_scene)
             current_character = None
-            pending_parenthetical = None
             continue
 
         if not current_scene:
             continue
 
-        # 🗣 Character
-        if CHAR_RE.match(line.strip()):
-            current_character = line.strip()
+        # 🗣 Character (handles CONT'D)
+        m = CHAR_RE.match(line)
+        if m:
+            current_character = m.group(1)
             pending_parenthetical = None
+            last_dialogue = None
             continue
 
         # 🎭 Parenthetical
-        if PAREN_RE.match(line.strip()) and current_character:
-            pending_parenthetical = line.strip("()")
+        pm = PAREN_RE.match(line)
+        if pm and current_character:
+            raw_p = pm.group(1)
+            emotions = [e.strip() for e in raw_p.split(",")]
+            pending_parenthetical = Parenthetical(
+                raw=raw_p,
+                emotions=emotions
+            )
             continue
 
-        # 💬 Dialogue
+        # 💬 Dialogue (merge wrapped lines)
         if current_character:
-            current_scene.dialogue.append(
-                Dialogue(
+            if last_dialogue and last_dialogue.character == current_character:
+                last_dialogue.text += " " + line
+            else:
+                d = Dialogue(
+                    dialogue_id=uid("dlg"),
                     character=current_character,
-                    text=line.strip(),
+                    text=line,
                     parenthetical=pending_parenthetical,
                     order=order
                 )
-            )
-            order += 1
+                current_scene.dialogue.append(d)
+                last_dialogue = d
+                order += 1
+
             pending_parenthetical = None
             continue
 
-        # 🎞 Action
-        current_scene.action.append(line.strip())
+        # 🎞 Action / Beat
+        current_scene.action.append(
+            Action(
+                text=line,
+                is_beat=bool(BEAT_RE.match(line))
+            )
+        )
 
     return Script(scenes=scenes)
-
-
-# with open("sample.fountain") as f:
-#     text = f.read()
-
-# script = parse_fountain(text)
-
-# import json
-# from dataclasses import asdict
-# print(json.dumps(asdict(script), indent=2))
-
-# with open("output_fountain.json", "w") as f:
-#     json.dump(asdict(script), f, indent=2)
