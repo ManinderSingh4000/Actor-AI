@@ -1,45 +1,24 @@
 import fitz  # PyMuPDF
 import re
-from models.schema import Script, Scene, Dialogue
+from models.schema import Script, Scene, Dialogue , Action , Parenthetical , uid
 
 SCENE_RE = re.compile(r'^(INT|EXT)\.?\s', re.IGNORECASE)
 PAREN_RE = re.compile(r'^\(.+\)$')
-
-
-# ACTION_LIKE_RE = (
-#     "pause", "silence", "beat", "breath",
-#     "crackles", "rings", "bang", "footsteps",
-#     "stares", "nods", "rubs", "tightens",
-#     "stands", "turns", "begins", "stops",
-#     "cuts off", "fades", "straightens", "sits",
-#     "whispers", "shouts", "yells", "laughs",
-#     "smiles", "grins", "looks", "glares",
-#     "watches", "listens", "sighs", "groans",
-#     "trembles", "quivers", "chuckles", "snickers",
-#     "murmurs", "gasps", "cries", "weeps",
-#     "screams", "howls", "roars", "snaps","steps",
-#     "bolts","emerges","appears","disappears","approaches","withdraws",
-#     "swerves"
-# )
-
-# def looks_like_action(line: str) -> bool:
-#     l = line.lower()
-#     return (
-#         any(word in l for word in ACTION_LIKE_RE)
-#         and not l.endswith("?")
-#     )
+CHAR_VO_RE = re.compile(
+    r'^([A-Z][A-Z ]{1,40})\s*(?:\((V\.O\.|O\.S\.|CONT[’\']?D)\))?$'
+)
 
 
 def sounds_like_dialogue(line: str) -> bool:
-    """
-    Does this line sound like something a human would say?
-    """
+    # Must NOT look like action
+    if re.search(r'\b(tightens|walks|stands|sits|looks|turns|moves)\b', line.lower()):
+        return False
+
+    # Likely spoken
     return (
         "?" in line
-        or "'" in line               # contractions: don't, I'm, it's
-        or line.lower().startswith((
-            "i ", "we ", "you ", "he ", "she ", "they "
-        ))
+        or line.startswith(("\"", "'"))
+        or re.match(r'^(I|We|You|He|She|They)\b', line)
     )
 
 
@@ -55,6 +34,13 @@ def is_short_beat(line: str) -> bool:
     )
 
 
+def split_dialogue_action(line: str):
+    if ". A " in line:
+        parts = line.split(". A ", 1)
+        return parts[0] + ".", "A " + parts[1]
+    return line, None
+
+
 
 def parse_pdf(file_path: str) -> str:
     doc = fitz.open(file_path)
@@ -65,21 +51,29 @@ def parse_pdf(file_path: str) -> str:
 
     return "\n".join(text)
 
+
 def parse_pdf_lines(text: str) -> Script:
     scenes = []
     current_scene = None
     current_character = None
     pending_parenthetical = None
+    last_dialogue = None
     order = 1
 
     for raw in text.splitlines():
         line = raw.strip()
+
         if not line:
+            current_character = None
+            last_dialogue = None
             continue
 
         # 🎬 Scene heading
         if SCENE_RE.match(line):
-            current_scene = Scene(heading=line)
+            current_scene = Scene(
+                scene_id=uid("scene"),
+                heading=line
+            )
             scenes.append(current_scene)
             current_character = None
             pending_parenthetical = None
@@ -88,42 +82,63 @@ def parse_pdf_lines(text: str) -> Script:
         if not current_scene:
             continue
 
-        # 🗣 Character cue (JOHN / JOHN (V.O.))
-        if line.isupper() and len(line.split()) <= 4:
-            current_character = line
-            pending_parenthetical = None
+        # 🗣 Character cue (MARY / MARY (V.O.))
+        m = CHAR_VO_RE.match(line)
+        if m:
+            current_character = m.group(1).strip()
+            tag = m.group(2)
+
+            pending_parenthetical = (
+                Parenthetical(raw=tag, emotions=[]) if tag else None
+            )
+            last_dialogue = None
             continue
 
-        # 🎭 Parenthetical on its own line
+        # 🎭 Explicit parenthetical line
         if PAREN_RE.match(line) and current_character:
-            pending_parenthetical = line.strip("()")
+            raw_p = line.strip("()")
+            pending_parenthetical = Parenthetical(
+                raw=raw_p,
+                emotions=[e.strip() for e in raw_p.split(",")]
+            )
             continue
 
-        # 💬 Dialogue
-        if current_character:
+        # 🔹 Split mixed dialogue/action (if any)
+        dialogue_part, action_part = split_dialogue_action(line)
 
-    # 1️⃣ Implicit parenthetical (beat)
-            if is_short_beat(line):
-                pending_parenthetical = line.rstrip(".")
-                continue
+        # 💬 Dialogue ONLY if character exists AND it sounds spoken
+        if current_character and sounds_like_dialogue(dialogue_part):
+            d = Dialogue(
+                dialogue_id=uid("dlg"),
+                character=current_character,
+                text=dialogue_part,
+                parenthetical=pending_parenthetical,
+                order=order
+            )
+            current_scene.dialogue.append(d)
+            last_dialogue = d
+            order += 1
+            pending_parenthetical = None
 
-            # 2️⃣ Spoken dialogue
-            if sounds_like_dialogue(line):
-                current_scene.dialogue.append(
-                    Dialogue(
-                        character=current_character,
-                        text=line,
-                        parenthetical=pending_parenthetical,
-                        order=order
+            # trailing action (rare but valid)
+            if action_part:
+                current_scene.action.append(
+                    Action(
+                        text=action_part,
+                        is_beat=is_short_beat(action_part),
+                        character_ref=None
                     )
                 )
-                order += 1
-                pending_parenthetical = None
-                continue
-
-            # 3️⃣ Otherwise → action interrupt
-            current_scene.action.append(line)
             continue
 
+        # 🎞 DEFAULT → ACTION
+        current_scene.action.append(
+            Action(
+                text=line,
+                is_beat=is_short_beat(line),
+                character_ref=None
+            )
+        )
 
     return Script(scenes=scenes)
+

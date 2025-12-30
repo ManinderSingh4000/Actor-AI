@@ -1,75 +1,368 @@
 {
   "scenes": [
     {
+      "scene_id": "scene_3e357919",
       "heading": "INT. SMALL APARTMENT - NIGHT",
-      "action": [],
+      "action": [
+        {
+          "text": "A dim, cramped apartment lit by a single yellow bulb. Shadows cling to the walls. Rain taps steadily",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "against the window, the sound sharp and relentless.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "JOHN, early 30s, tense and tired, sits on a couch scrolling through his phone. The room is quiet--too",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "quiet.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "His phone suddenly RINGS.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "John freezes. He hesitates, then answers.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "A pause. Static crackles on the line.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "John... it's me.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "John straightens immediately.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "John rubs his face, already sensing something is wrong.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "A breath. Then--",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "John stands up slowly.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Silence. The rain grows louder.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "John begins pacing.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Mary, you can't just disappear for months and then call me like this.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "John stops near the window, peering into the dark street below.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "Not safe. I can hear them moving outside.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "John's jaw tightens.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Then we don't have much time.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "A loud BANG is heard on Mary's end of the call.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "John... listen to me carefully.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Meet me at the old station. You remember the one.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "John nods instinctively.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Yes. Midnight. If I'm not there by twelve-thirty--",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "Don't say it.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Another sound--FOOTSTEPS.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Promise me you'll come.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "The call abruptly CUTS OFF.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "John stares at the phone. Then he grabs his jacket and keys.",
+          "is_beat": false,
+          "character_ref": null
+        }
+      ],
       "dialogue": [
         {
+          "dialogue_id": "dlg_75330911",
           "character": "JOHN",
-          "text": "Why tonight of all nights?",
-          "parenthetical": "muttering",
+          "text": "Hello?",
+          "parenthetical": null,
           "order": 1
         },
         {
+          "dialogue_id": "dlg_32724443",
           "character": "JOHN",
-          "text": "Hello?",
-          "parenthetical": "answers",
+          "text": "Mary? Do you have any idea what time it is?",
+          "parenthetical": {
+            "raw": "O.S.",
+            "emotions": []
+          },
           "order": 2
         },
         {
-          "character": "JOHN",
-          "text": "Where are you?",
-          "parenthetical": "low, urgent",
+          "dialogue_id": "dlg_0895ffbe",
+          "character": "MARY",
+          "text": "I wouldn't be calling if it wasn't important.",
+          "parenthetical": {
+            "raw": "V.O.",
+            "emotions": []
+          },
           "order": 3
         },
         {
+          "dialogue_id": "dlg_8df451ba",
           "character": "JOHN",
-          "text": "A LOUD BANG is heard on Mary's end.",
-          "parenthetical": "Another beat",
+          "text": "What happened?",
+          "parenthetical": null,
           "order": 4
         },
         {
-          "character": "MARY (V.O.)",
-          "text": "They're here--",
-          "parenthetical": "panicked",
+          "dialogue_id": "dlg_0214ad90",
+          "character": "MARY",
+          "text": "They found me.",
+          "parenthetical": {
+            "raw": "V.O.",
+            "emotions": []
+          },
           "order": 5
-        }
-      ]
-    },
-    {
-      "heading": "EXT. CITY STREET - NIGHT",
-      "action": [],
-      "dialogue": []
-    },
-    {
-      "heading": "INT. CAR - NIGHT",
-      "action": [],
-      "dialogue": [
+        },
         {
+          "dialogue_id": "dlg_9923e8cd",
           "character": "JOHN",
-          "text": "Mary?",
-          "parenthetical": "hesitant",
+          "text": "Who found you?",
+          "parenthetical": null,
           "order": 6
-        }
-      ]
-    },
-    {
-      "heading": "INT. WAREHOUSE - NIGHT",
-      "action": [],
-      "dialogue": [
+        },
         {
-          "character": "JOHN",
-          "text": "Mary?",
-          "parenthetical": "shouting",
+          "dialogue_id": "dlg_c7c344f2",
+          "character": "MARY",
+          "text": "I don't have time to explain. I messed up. I stayed too long.",
+          "parenthetical": {
+            "raw": "V.O.",
+            "emotions": []
+          },
           "order": 7
         },
         {
-          "character": "JOHN",
-          "text": "Where is she?",
-          "parenthetical": "angry",
+          "dialogue_id": "dlg_bad60846",
+          "character": "MARY",
+          "text": "I know. I know. But you're the only one I trust.",
+          "parenthetical": {
+            "raw": "V.O.",
+            "emotions": []
+          },
           "order": 8
+        },
+        {
+          "dialogue_id": "dlg_9d8ae9aa",
+          "character": "JOHN",
+          "text": "Where are you right now?",
+          "parenthetical": null,
+          "order": 9
+        },
+        {
+          "dialogue_id": "dlg_27417e9b",
+          "character": "JOHN",
+          "text": "I'm listening.",
+          "parenthetical": null,
+          "order": 10
+        },
+        {
+          "dialogue_id": "dlg_ebff57dc",
+          "character": "JOHN",
+          "text": "Near the river?",
+          "parenthetical": null,
+          "order": 11
+        },
+        {
+          "dialogue_id": "dlg_78340fbc",
+          "character": "MARY",
+          "text": "She stops herself.",
+          "parenthetical": {
+            "raw": "V.O.",
+            "emotions": []
+          },
+          "order": 12
+        },
+        {
+          "dialogue_id": "dlg_f7c6cc8f",
+          "character": "JOHN",
+          "text": "I'll be there.",
+          "parenthetical": null,
+          "order": 13
         }
       ]
+    },
+    {
+      "scene_id": "scene_28bd4f48",
+      "heading": "EXT. CITY STREET - NIGHT",
+      "action": [
+        {
+          "text": "Neon lights flicker. Cars rush past, spraying water onto the pavement. The city feels alive, unaware.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "John steps onto the sidewalk, pulling his hood up. His eyes scan every passerby.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "He moves quickly, blending into the crowd.",
+          "is_beat": false,
+          "character_ref": null
+        }
+      ],
+      "dialogue": [
+        {
+          "dialogue_id": "dlg_29e667f5",
+          "character": "JOHN",
+          "text": "Where are you Mary ? Are you There ?",
+          "parenthetical": null,
+          "order": 14
+        },
+        {
+          "dialogue_id": "dlg_108080e4",
+          "character": "MARY",
+          "text": "I'm here , save me from this cruel Creature.",
+          "parenthetical": {
+            "raw": "V.O.",
+            "emotions": []
+          },
+          "order": 15
+        }
+      ]
+    },
+    {
+      "scene_id": "scene_4b8f2bcb",
+      "heading": "INT. ABANDONED TRAIN STATION - NIGHT",
+      "action": [
+        {
+          "text": "A massive, decaying structure. Broken clocks. Graffiti-covered walls. Wind howls through empty",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "corridors.",
+          "is_beat": false,
+          "character_ref": null
+        },
+        {
+          "text": "John enters cautiously.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "He checks his watch:11:58 PM.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Footsteps echo in the distance.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "John turns.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "A figure emerges from the shadows.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "It's Mary.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Exhausted. Shaken. But alive.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "Their eyes meet.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
+          "text": "The clock above them TICKS loudly as the screen FADES TO BLACK.",
+          "is_beat": false,
+          "character_ref": null
+        }
+      ],
+      "dialogue": []
     }
   ]
 }
