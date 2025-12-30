@@ -1,0 +1,39 @@
+# -------------------------
+# Python
+# -------------------------
+__pycache__/
+*.py[cod]
+*.pyo
+
+# -------------------------
+# Virtual Environment
+# -------------------------
+venv/
+.env/
+.env.*
+
+# -------------------------
+# Editor / OS
+# -------------------------
+.vscode/
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Generated Outputs
+# -------------------------
+output_*.json
+output_fountain.json
+PDF_Response/
+Fountain_Response/
+
+# -------------------------
+# Input Files (Optional)
+# -------------------------
+*.pdf
+
+# -------------------------
+# Logs / Temp
+# -------------------------
+*.log
+*.tmp
