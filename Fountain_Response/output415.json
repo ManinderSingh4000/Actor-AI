@@ -1,7 +1,7 @@
 {
   "scenes": [
     {
-      "scene_id": "scene_964a5818",
+      "scene_id": "scene_f4246169",
       "heading": "INT. SMALL ROADSIDE STORE – LATE AFTERNOON",
       "action": [
         {
@@ -142,28 +142,28 @@
       ],
       "dialogue": [
         {
-          "dialogue_id": "dlg_eea75c1f",
+          "dialogue_id": "dlg_35725348",
           "character": "STRANGER",
           "text": "How long you been running this place?",
           "parenthetical": null,
           "order": 1
         },
         {
-          "dialogue_id": "dlg_c0fab857",
+          "dialogue_id": "dlg_f11c9423",
           "character": "SHOPKEEPER",
           "text": "Oh— close to thirty years now.",
           "parenthetical": null,
           "order": 2
         },
         {
-          "dialogue_id": "dlg_e0d68d69",
+          "dialogue_id": "dlg_2513661b",
           "character": "STRANGER",
           "text": "That’s a long time.",
           "parenthetical": null,
           "order": 3
         },
         {
-          "dialogue_id": "dlg_488a4be8",
+          "dialogue_id": "dlg_dbb6e017",
           "character": "SHOPKEEPER",
           "text": "Guess it is.",
           "parenthetical": {
@@ -175,105 +175,105 @@
           "order": 4
         },
         {
-          "dialogue_id": "dlg_88491d59",
+          "dialogue_id": "dlg_42d6da6e",
           "character": "STRANGER",
           "text": "Place doesn’t change much, does it?",
           "parenthetical": null,
           "order": 5
         },
         {
-          "dialogue_id": "dlg_3c66a54f",
+          "dialogue_id": "dlg_db3a9ac1",
           "character": "SHOPKEEPER",
           "text": "People like it that way.",
           "parenthetical": null,
           "order": 6
         },
         {
-          "dialogue_id": "dlg_3781c089",
+          "dialogue_id": "dlg_71a26c92",
           "character": "STRANGER",
           "text": "You married?",
           "parenthetical": null,
           "order": 7
         },
         {
-          "dialogue_id": "dlg_66d6940c",
+          "dialogue_id": "dlg_5ff4abd6",
           "character": "SHOPKEEPER",
           "text": "Yes, sir.",
           "parenthetical": null,
           "order": 8
         },
         {
-          "dialogue_id": "dlg_f5ca6331",
+          "dialogue_id": "dlg_9e07dff8",
           "character": "STRANGER",
           "text": "How long?",
           "parenthetical": null,
           "order": 9
         },
         {
-          "dialogue_id": "dlg_3df0ae85",
+          "dialogue_id": "dlg_1bd2a7ef",
           "character": "SHOPKEEPER",
           "text": "Thirty-two years.",
           "parenthetical": null,
           "order": 10
         },
         {
-          "dialogue_id": "dlg_409951b6",
+          "dialogue_id": "dlg_e9e85d46",
           "character": "STRANGER",
           "text": "Then you know something about commitment.",
           "parenthetical": null,
           "order": 11
         },
         {
-          "dialogue_id": "dlg_9c277092",
+          "dialogue_id": "dlg_e6627d4a",
           "character": "SHOPKEEPER",
           "text": "I suppose.",
           "parenthetical": null,
           "order": 12
         },
         {
-          "dialogue_id": "dlg_cdcdb8fe",
+          "dialogue_id": "dlg_9c25b9d1",
           "character": "STRANGER",
           "text": "You ever notice how some things only look small until they decide something big?",
           "parenthetical": null,
           "order": 13
         },
         {
-          "dialogue_id": "dlg_b01d3771",
+          "dialogue_id": "dlg_b7f04f13",
           "character": "SHOPKEEPER",
           "text": "I’m not sure what you mean.",
           "parenthetical": null,
           "order": 14
         },
         {
-          "dialogue_id": "dlg_290f0d55",
+          "dialogue_id": "dlg_8a88430b",
           "character": "STRANGER",
           "text": "That coin’s been traveling a long time. Long before either of us walked in here.",
           "parenthetical": null,
           "order": 15
         },
         {
-          "dialogue_id": "dlg_0d31d231",
-          "character": "STRANGER ",
+          "dialogue_id": "dlg_42a68f8f",
+          "character": "STRANGER",
           "text": "Call it.",
           "parenthetical": null,
           "order": 16
         },
         {
-          "dialogue_id": "dlg_7d00101e",
+          "dialogue_id": "dlg_53450d5c",
           "character": "SHOPKEEPER",
           "text": "Call what?",
           "parenthetical": null,
           "order": 17
         },
         {
-          "dialogue_id": "dlg_fdbeb2f0",
+          "dialogue_id": "dlg_b79983eb",
           "character": "STRANGER",
           "text": "Heads or tails.",
           "parenthetical": null,
           "order": 18
         },
         {
-          "dialogue_id": "dlg_7e7d2eb1",
+          "dialogue_id": "dlg_38681a78",
           "character": "SHOPKEEPER",
           "text": "For what?",
           "parenthetical": {
@@ -286,63 +286,63 @@
           "order": 19
         },
         {
-          "dialogue_id": "dlg_05f506fe",
+          "dialogue_id": "dlg_7cc48648",
           "character": "STRANGER",
           "text": "For everything up to this moment.",
           "parenthetical": null,
           "order": 20
         },
         {
-          "dialogue_id": "dlg_0d6864af",
+          "dialogue_id": "dlg_4fee514e",
           "character": "SHOPKEEPER",
           "text": "I didn’t agree to any game.",
           "parenthetical": null,
           "order": 21
         },
         {
-          "dialogue_id": "dlg_c7176b97",
+          "dialogue_id": "dlg_9c907d96",
           "character": "STRANGER",
           "text": "That’s the thing. You don’t have to agree for it to matter.",
           "parenthetical": null,
           "order": 22
         },
         {
-          "dialogue_id": "dlg_93cdae9e",
+          "dialogue_id": "dlg_73e772e5",
           "character": "SHOPKEEPER",
           "text": "Heads.",
           "parenthetical": null,
           "order": 23
         },
         {
-          "dialogue_id": "dlg_548b7393",
+          "dialogue_id": "dlg_51253ace",
           "character": "STRANGER",
           "text": "You chose right.",
           "parenthetical": null,
           "order": 24
         },
         {
-          "dialogue_id": "dlg_ac1905a5",
+          "dialogue_id": "dlg_bd9fbda5",
           "character": "SHOPKEEPER",
           "text": "So… what happens now?",
           "parenthetical": null,
           "order": 25
         },
         {
-          "dialogue_id": "dlg_7d8df327",
+          "dialogue_id": "dlg_83f14bc9",
           "character": "STRANGER",
           "text": "You keep it.",
           "parenthetical": null,
           "order": 26
         },
         {
-          "dialogue_id": "dlg_f56016c0",
+          "dialogue_id": "dlg_67155455",
           "character": "SHOPKEEPER",
           "text": "Why?",
           "parenthetical": null,
           "order": 27
         },
         {
-          "dialogue_id": "dlg_eb4ce1e1",
+          "dialogue_id": "dlg_e31f1b9b",
           "character": "STRANGER",
           "text": "Because you won. And people should remember when luck decided to stay.",
           "parenthetical": null,

@@ -40,8 +40,9 @@ def parse_fountain(text: str) -> Script:
 
         # 🗣 Character (handles CONT'D)
         m = CHAR_RE.match(line)
+        
         if m:
-            current_character = m.group(1)
+            current_character = m.group(1).strip()
             pending_parenthetical = None
             last_dialogue = None
             continue
