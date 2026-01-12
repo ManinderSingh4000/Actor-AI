@@ -21,6 +21,10 @@ class Dialogue:
     parenthetical: Optional[Parenthetical] = None
     order: int = 0
 
+@dataclass
+class Transition:
+    text: str
+
 
 @dataclass
 class Action:
@@ -35,6 +39,8 @@ class Scene:
     heading: str
     action: List[Action] = field(default_factory=list)
     dialogue: List[Dialogue] = field(default_factory=list)
+    transitions: List[Transition] = field(default_factory=list)
+
 
 
 @dataclass

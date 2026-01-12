@@ -1,10 +1,14 @@
 import re
-from models.schema import Scene, Dialogue, Script, Action, Parenthetical, uid
+from models.schema import Scene, Dialogue, Script, Action, Parenthetical, uid , Transition
 
 SCENE_RE = re.compile(r'^(INT|EXT)\.?\s', re.IGNORECASE)
 CHAR_RE = re.compile(r'^([A-Z][A-Z0-9 ]{1,40})(?:\s*\(CONT[’\']?D\))?$')
 PAREN_RE = re.compile(r'^\((.+)\)$')
 BEAT_RE = re.compile(r'^(A beat\.|Beat\.|Pause\.)$', re.IGNORECASE)
+TRANSITION_RE = re.compile(
+    r'^(?:>\s*)?(?:CUT TO:|FADE OUT\.|FADE TO BLACK\.|CUT TO BLACK\.|DISSOLVE TO:|SMASH CUT:?|MATCH CUT:?|FADE IN\.)$'
+)
+
 
 
 def parse_fountain(text: str) -> Script:
@@ -78,11 +82,20 @@ def parse_fountain(text: str) -> Script:
             continue
 
         # 🎞 Action / Beat
+        # 🎬 Transition (Fountain style)
+        if TRANSITION_RE.match(line):
+            current_scene.transitions.append(
+                Transition(text=line)
+            )
+            continue
+
+        # 🎞 Action / Beat
         current_scene.action.append(
             Action(
                 text=line,
                 is_beat=bool(BEAT_RE.match(line))
             )
         )
+
 
     return Script(scenes=scenes)

@@ -1,6 +1,7 @@
 from models.blocks import Block
 from models.dialogue import Dialogue
 from models.action import Action
+from models.scene import Scene
 
 
 class CanonicalNormalizer:

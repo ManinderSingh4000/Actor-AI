@@ -1,0 +1,516 @@
+[
+  {
+    "scene_id": "scene_ba821bb5",
+    "heading": {
+      "raw": "INT. SMALL ROADSIDE STORE – LATE AFTERNOON"
+    },
+    "blocks": [
+      {
+        "block_id": "dlg_b26afb2b",
+        "order": 1,
+        "type": "dialogue",
+        "text": "How long you been running this place?",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_610c8f50",
+        "order": 2,
+        "type": "dialogue",
+        "text": "Oh— close to thirty years now.",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_dbdf57b1",
+        "order": 3,
+        "type": "dialogue",
+        "text": "That’s a long time.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_79d63b9d",
+        "order": 4,
+        "type": "dialogue",
+        "text": "Guess it is.",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": {
+          "raw": "smiles",
+          "emotions": [
+            "smiles"
+          ]
+        }
+      },
+      {
+        "block_id": "dlg_c79cf76c",
+        "order": 5,
+        "type": "dialogue",
+        "text": "Place doesn’t change much, does it?",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_a37179f9",
+        "order": 6,
+        "type": "dialogue",
+        "text": "People like it that way.",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_8af8ee4c",
+        "order": 7,
+        "type": "dialogue",
+        "text": "You married?",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_c79bfc47",
+        "order": 8,
+        "type": "dialogue",
+        "text": "Yes, sir.",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_3a0fa6f2",
+        "order": 9,
+        "type": "dialogue",
+        "text": "How long?",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_6d685a44",
+        "order": 10,
+        "type": "dialogue",
+        "text": "Thirty-two years.",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_13d04838",
+        "order": 11,
+        "type": "dialogue",
+        "text": "Then you know something about commitment.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_33ec4f24",
+        "order": 12,
+        "type": "dialogue",
+        "text": "I suppose.",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_83857eae",
+        "order": 13,
+        "type": "dialogue",
+        "text": "You ever notice how some things only look small until they decide something big?",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_52a5f16e",
+        "order": 14,
+        "type": "dialogue",
+        "text": "I’m not sure what you mean.",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_fb6ae2c3",
+        "order": 15,
+        "type": "dialogue",
+        "text": "That coin’s been traveling a long time. Long before either of us walked in here.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_0cd47f28",
+        "order": 16,
+        "type": "dialogue",
+        "text": "Call it.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_f592d3e3",
+        "order": 17,
+        "type": "dialogue",
+        "text": "Call what?",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_ea0ac1dc",
+        "order": 18,
+        "type": "dialogue",
+        "text": "Heads or tails.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_47a27f55",
+        "order": 19,
+        "type": "dialogue",
+        "text": "For what?",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": {
+          "raw": "confused, uneasy",
+          "emotions": [
+            "confused",
+            "uneasy"
+          ]
+        }
+      },
+      {
+        "block_id": "dlg_049eb06f",
+        "order": 20,
+        "type": "dialogue",
+        "text": "For everything up to this moment.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_0ac7aad4",
+        "order": 21,
+        "type": "dialogue",
+        "text": "I didn’t agree to any game.",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_3328012a",
+        "order": 22,
+        "type": "dialogue",
+        "text": "That’s the thing. You don’t have to agree for it to matter.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_080dd2cf",
+        "order": 23,
+        "type": "dialogue",
+        "text": "Heads.",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_c3ef610a",
+        "order": 24,
+        "type": "dialogue",
+        "text": "You chose right.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_852e38d9",
+        "order": 25,
+        "type": "dialogue",
+        "text": "So… what happens now?",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_b2d3997c",
+        "order": 26,
+        "type": "dialogue",
+        "text": "You keep it.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_3b1aaf65",
+        "order": 27,
+        "type": "dialogue",
+        "text": "Why?",
+        "is_beat": false,
+        "character": "SHOPKEEPER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "dlg_82e98aa6",
+        "order": 28,
+        "type": "dialogue",
+        "text": "Because you won. And people should remember when luck decided to stay.",
+        "is_beat": false,
+        "character": "STRANGER",
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_77c30949",
+        "order": 29,
+        "type": "action",
+        "text": "The store is quiet. A ceiling fan hums.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_9474c580",
+        "order": 30,
+        "type": "action",
+        "text": "The SHOPKEEPER counts change behind the counter.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_aa81d1c7",
+        "order": 31,
+        "type": "action",
+        "text": "The STRANGER stands nearby, examining a candy bar. He sets it down.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_f9a7b4ca",
+        "order": 32,
+        "type": "action",
+        "text": "The STRANGER nods. Processes this.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_2612d8c0",
+        "order": 33,
+        "type": "action",
+        "text": "A beat.",
+        "is_beat": true,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_b9253856",
+        "order": 34,
+        "type": "action",
+        "text": "The STRANGER looks around.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_eae16206",
+        "order": 35,
+        "type": "action",
+        "text": "The STRANGER meets his eyes.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_e5c4e6d7",
+        "order": 36,
+        "type": "action",
+        "text": "The STRANGER tilts his head slightly.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_cb6f17f6",
+        "order": 37,
+        "type": "action",
+        "text": "The SHOPKEEPER chuckles politely.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_6342ac2e",
+        "order": 38,
+        "type": "action",
+        "text": "Silence stretches.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_4614cf81",
+        "order": 39,
+        "type": "action",
+        "text": "The STRANGER takes a coin from his pocket and places it on the counter.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_e1d6806f",
+        "order": 40,
+        "type": "action",
+        "text": "The SHOPKEEPER glances at the coin.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_edc0ec85",
+        "order": 41,
+        "type": "action",
+        "text": "He nudges it forward.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_95e5a5ba",
+        "order": 42,
+        "type": "action",
+        "text": "The SHOPKEEPER frowns.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_0b8aeaa3",
+        "order": 43,
+        "type": "action",
+        "text": "The STRANGER’s voice stays calm.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_2cc3e3a1",
+        "order": 44,
+        "type": "action",
+        "text": "A long pause. The fan hum grows louder.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_f9abcd67",
+        "order": 45,
+        "type": "action",
+        "text": "The SHOPKEEPER swallows.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_4ed42873",
+        "order": 46,
+        "type": "action",
+        "text": "The STRANGER flips the coin. Catches it. Covers it.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_cb90c0a7",
+        "order": 47,
+        "type": "action",
+        "text": "He reveals it.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_664aa2e3",
+        "order": 48,
+        "type": "action",
+        "text": "The SHOPKEEPER exhales, nervous laugh.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_7db63c34",
+        "order": 49,
+        "type": "action",
+        "text": "The STRANGER pushes the coin toward him.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_32445a0f",
+        "order": 50,
+        "type": "action",
+        "text": "The STRANGER leans in just slightly.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_5db9001c",
+        "order": 51,
+        "type": "action",
+        "text": "The STRANGER turns and walks out.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_2991b1b1",
+        "order": 52,
+        "type": "action",
+        "text": "The SHOPKEEPER stares at the coin in his hand.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_6d51458e",
+        "order": 53,
+        "type": "action",
+        "text": "The bell over the door jingles.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_4fcc4d1e",
+        "order": 54,
+        "type": "action",
+        "text": "Silence.",
+        "is_beat": false,
+        "character": null,
+        "parenthetical": null
+      },
+      {
+        "block_id": "blk_ca958259",
+        "order": 55,
+        "type": "transition",
+        "text": "CUT TO BLACK.",
+        "is_beat": true,
+        "character": null,
+        "parenthetical": null
+      }
+    ]
+  }
+]
