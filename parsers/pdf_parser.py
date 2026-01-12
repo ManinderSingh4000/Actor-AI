@@ -11,7 +11,7 @@ CHAR_VO_RE = re.compile(
 
 def sounds_like_dialogue(line: str) -> bool:
     # Must NOT look like action
-    if re.search(r'\b(tightens|walks|stands|sits|looks|turns|moves)\b', line.lower()):
+    if re.search(r'\b(tightens|walks|stands|sits|stops|looks|turns|moves)\b', line.lower()):
         return False
 
     # Likely spoken

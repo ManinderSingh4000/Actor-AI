@@ -23,7 +23,7 @@ def normalize_script(text: str) -> str:
     text = re.sub(r'\n{3,}', '\n\n', text)
 
     # Collapse excessive newlines
-    text = re.sub(r'\n{3,}', '\n\n', text)
+    # text = re.sub(r'\n{3,}', '\n\n', text)
 
     # Normalize VO / OS markers
     text = re.sub(r'\(\s*V\.O\.\s*\)', '(V.O.)', text, flags=re.IGNORECASE)

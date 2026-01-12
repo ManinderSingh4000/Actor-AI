@@ -1,7 +1,7 @@
 {
   "scenes": [
     {
-      "scene_id": "scene_3e357919",
+      "scene_id": "scene_ff48ceeb",
       "heading": "INT. SMALL APARTMENT - NIGHT",
       "action": [
         {
@@ -66,7 +66,7 @@
         },
         {
           "text": "Silence. The rain grows louder.",
-          "is_beat": true,
+          "is_beat": true,  
           "character_ref": null
         },
         {
@@ -125,6 +125,11 @@
           "character_ref": null
         },
         {
+          "text": "She stops herself.",
+          "is_beat": true,
+          "character_ref": null
+        },
+        {
           "text": "Don't say it.",
           "is_beat": true,
           "character_ref": null
@@ -152,14 +157,14 @@
       ],
       "dialogue": [
         {
-          "dialogue_id": "dlg_75330911",
+          "dialogue_id": "dlg_05b8feed",
           "character": "JOHN",
           "text": "Hello?",
           "parenthetical": null,
           "order": 1
         },
         {
-          "dialogue_id": "dlg_32724443",
+          "dialogue_id": "dlg_1c733d7c",
           "character": "JOHN",
           "text": "Mary? Do you have any idea what time it is?",
           "parenthetical": {
@@ -169,7 +174,7 @@
           "order": 2
         },
         {
-          "dialogue_id": "dlg_0895ffbe",
+          "dialogue_id": "dlg_7fa705c0",
           "character": "MARY",
           "text": "I wouldn't be calling if it wasn't important.",
           "parenthetical": {
@@ -179,14 +184,14 @@
           "order": 3
         },
         {
-          "dialogue_id": "dlg_8df451ba",
+          "dialogue_id": "dlg_0457e00f",
           "character": "JOHN",
           "text": "What happened?",
           "parenthetical": null,
           "order": 4
         },
         {
-          "dialogue_id": "dlg_0214ad90",
+          "dialogue_id": "dlg_830721de",
           "character": "MARY",
           "text": "They found me.",
           "parenthetical": {
@@ -196,14 +201,14 @@
           "order": 5
         },
         {
-          "dialogue_id": "dlg_9923e8cd",
+          "dialogue_id": "dlg_d96df97b",
           "character": "JOHN",
           "text": "Who found you?",
           "parenthetical": null,
           "order": 6
         },
         {
-          "dialogue_id": "dlg_c7c344f2",
+          "dialogue_id": "dlg_47e7dcdf",
           "character": "MARY",
           "text": "I don't have time to explain. I messed up. I stayed too long.",
           "parenthetical": {
@@ -213,7 +218,7 @@
           "order": 7
         },
         {
-          "dialogue_id": "dlg_bad60846",
+          "dialogue_id": "dlg_e475a490",
           "character": "MARY",
           "text": "I know. I know. But you're the only one I trust.",
           "parenthetical": {
@@ -223,47 +228,37 @@
           "order": 8
         },
         {
-          "dialogue_id": "dlg_9d8ae9aa",
+          "dialogue_id": "dlg_40389b96",
           "character": "JOHN",
           "text": "Where are you right now?",
           "parenthetical": null,
           "order": 9
         },
         {
-          "dialogue_id": "dlg_27417e9b",
+          "dialogue_id": "dlg_c9fdeb33",
           "character": "JOHN",
           "text": "I'm listening.",
           "parenthetical": null,
           "order": 10
         },
         {
-          "dialogue_id": "dlg_ebff57dc",
+          "dialogue_id": "dlg_f4dbee36",
           "character": "JOHN",
           "text": "Near the river?",
           "parenthetical": null,
           "order": 11
         },
         {
-          "dialogue_id": "dlg_78340fbc",
-          "character": "MARY",
-          "text": "She stops herself.",
-          "parenthetical": {
-            "raw": "V.O.",
-            "emotions": []
-          },
-          "order": 12
-        },
-        {
-          "dialogue_id": "dlg_f7c6cc8f",
+          "dialogue_id": "dlg_8ec677a6",
           "character": "JOHN",
           "text": "I'll be there.",
           "parenthetical": null,
-          "order": 13
+          "order": 12
         }
       ]
     },
     {
-      "scene_id": "scene_28bd4f48",
+      "scene_id": "scene_4231165a",
       "heading": "EXT. CITY STREET - NIGHT",
       "action": [
         {
@@ -284,26 +279,26 @@
       ],
       "dialogue": [
         {
-          "dialogue_id": "dlg_29e667f5",
+          "dialogue_id": "dlg_2e35980e",
           "character": "JOHN",
           "text": "Where are you Mary ? Are you There ?",
           "parenthetical": null,
-          "order": 14
+          "order": 13
         },
         {
-          "dialogue_id": "dlg_108080e4",
+          "dialogue_id": "dlg_7cbae0fe",
           "character": "MARY",
           "text": "I'm here , save me from this cruel Creature.",
           "parenthetical": {
             "raw": "V.O.",
             "emotions": []
           },
-          "order": 15
+          "order": 14
         }
       ]
     },
     {
-      "scene_id": "scene_4b8f2bcb",
+      "scene_id": "scene_1c11a456",
       "heading": "INT. ABANDONED TRAIN STATION - NIGHT",
       "action": [
         {
