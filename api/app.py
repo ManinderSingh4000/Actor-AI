@@ -1,4 +1,4 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI, UploadFile, File, HTTPException , BackgroundTasks
 from fastapi.responses import JSONResponse
 import uuid
 import os
@@ -23,6 +23,16 @@ PARSED_SCRIPTS = {}    # script_id -> canonical scenes
 
 def generate_script_id() -> str:
     return f"scr_{uuid.uuid4().hex[:16]}"
+
+
+
+def run_parsing_pipeline(script_id: str):
+    script_info = RAW_SCRIPTS[script_id]
+    script = process_script(script_info["path"])
+    canonical_scenes = normalize_script_to_canonical(script)
+    PARSED_SCRIPTS[script_id] = canonical_scenes
+
+
 
 
 # ------------------------------------------------------------------
@@ -78,43 +88,62 @@ async def upload_script(file: UploadFile = File(...)):
 # 2️⃣ Parse & Normalize Endpoint
 # ------------------------------------------------------------------
 
+# @app.post("/scripts/{script_id}/parse")
+# def parse_script(script_id: str):
+#     if script_id not in RAW_SCRIPTS:
+#         raise HTTPException(
+#             status_code=404,
+#             detail="Script not found. Upload first."
+#         )
+
+#     if script_id in PARSED_SCRIPTS:
+#         return {
+#             "status": "already_parsed",
+#             "script_id": script_id,
+#             "scene_count": len(PARSED_SCRIPTS[script_id])
+#         }
+
+#     script_info = RAW_SCRIPTS[script_id]
+
+#     try:
+#         # Parse using existing pipeline
+#         script = process_script(script_info["path"])
+
+#         # Normalize to canonical blocks
+#         canonical_scenes = normalize_script_to_canonical(script)
+
+#         PARSED_SCRIPTS[script_id] = canonical_scenes
+
+#         return {
+#             "status": "parsed",
+#             "script_id": script_id,
+#             "scene_count": len(canonical_scenes)
+#         }
+
+#     except Exception as e:
+#         raise HTTPException(
+#             status_code=500,
+#             detail=str(e)
+#         )
+
+
 @app.post("/scripts/{script_id}/parse")
-def parse_script(script_id: str):
+async def parse_script_async(script_id: str, background_tasks: BackgroundTasks):
     if script_id not in RAW_SCRIPTS:
-        raise HTTPException(
-            status_code=404,
-            detail="Script not found. Upload first."
-        )
+        raise HTTPException(404, "Script not found.")
 
     if script_id in PARSED_SCRIPTS:
         return {
             "status": "already_parsed",
-            "script_id": script_id,
-            "scene_count": len(PARSED_SCRIPTS[script_id])
+            "script_id": script_id
         }
 
-    script_info = RAW_SCRIPTS[script_id]
+    background_tasks.add_task(run_parsing_pipeline, script_id)
 
-    try:
-        # Parse using existing pipeline
-        script = process_script(script_info["path"])
-
-        # Normalize to canonical blocks
-        canonical_scenes = normalize_script_to_canonical(script)
-
-        PARSED_SCRIPTS[script_id] = canonical_scenes
-
-        return {
-            "status": "parsed",
-            "script_id": script_id,
-            "scene_count": len(canonical_scenes)
-        }
-
-    except Exception as e:
-        raise HTTPException(
-            status_code=500,
-            detail=str(e)
-        )
+    return {
+        "status": "parsing_started",
+        "script_id": script_id
+    }
 
 
 # ------------------------------------------------------------------
